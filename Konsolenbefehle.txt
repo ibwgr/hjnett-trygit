@@ -1,0 +1,25 @@
+Konfiguration prüfen
+~/.gitconfig
+
+Konfiguration des Repos
+cat .git/config
+
+mkdir verzeichnisname  ->Verzeichnis erstellen
+touch datei.txt        ->Datei anlegen
+vi datei.txt           ->Datei edieren
+
+i                      ->Text kann eingegeben werden
+Esc -> :wq -> Enter    ->Editor speichern und verlassen
+
+Ecc -> :q! -> Enter    ->Editor verlassen ohne speichern
+
+:q   (Quit)
+
+Verbindung zu github mit Name origin auf https://github.com/ibwgr/hjnett-trygit.git hinzufügen:
+git remote add origin https://github.com/ibwgr/hjnett-trygit.git
+
+Lokales Repository nach Änderungen ins origin-Repo auf github.com hochladen:
+git push -u origin master
+
+IntelliJ git init
+VCS -> Enable -> Git
