@@ -32,6 +32,8 @@ git reset HAED . --> alle Dateien im Stage Bereich werden zurück genommen.
 
 git diff <hashNr erste 7 zeichen> <hashNr erste 7 zeichen> --> Vergleicht die zwei Dateien auf unterschiede.
 
+git diff --staged -->  Zeigt Unterschiede zwischen staging Area und letztem Commit (HEAD)
+
 git branch <Branch Name>  --> Neuen Branch anlegen.
 
 git brauch <Branch Name> <hashNr> --> Brach zweigt von der Angegebenen hashNr ab.
@@ -46,7 +48,7 @@ git reflog --> Kann die HashNr. aus dem lokalen reflog ausgelesen werden.
 
 git merge <Branch Name> --> Einen Banch wieder mit Master zusammen führen. Dazu muss man im Master Branch sein.
 
-git checkout <Banch Name> -->erzeugt einen neuen Brach, wechselt aber nicht dorthin.
+git checkout <Banch Name> -->wechselt in den neuen Branch.
 
 git checkout -b <Brach Name> -->erzeugt einen neuen Brach und wechselt auch den Zweig.
 
