@@ -1,3 +1,3 @@
 public class OptionA{
-int nummer = 100;
+int nummer = 10;
 }
