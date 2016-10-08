@@ -1,2 +1,3 @@
 Das File ist leer.
+Anpassung für HotfixV1.5
 Neue Zeile
