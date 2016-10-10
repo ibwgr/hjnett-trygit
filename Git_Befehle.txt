@@ -64,6 +64,10 @@ git fetch origin master  --> der Remote-Track-Branch wir aus dem Repository(orig
 
 git reset --soft HEAD~1  --> der History wird auf den letzten Commit (HEAD minus 1) zurückgesetzt und die Änderungen die darin enthalten waren erscheinen im Stage-Bereich
 
+git reset --hard HEAD~2 --> Die letzten beiden Commits waren für die Katze. Ich möchte deren Änderungen löschen.
+
+git cherry-pick <commit-hash-nummer> --> Übertragung nützlicher Änderungen aus einem Feature-Branch der gelöst werden soll.
+
 
 
 
