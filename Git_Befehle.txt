@@ -56,10 +56,13 @@ git stash --> Mit diesem Befehl können Änderungen vom Workspace zwischen gespeic
 
 git stash list --> anschauen was zwischen gespeichert ist.
 
-git stash pop --> Änderungen uas zwischen Speicher zurück hohlen.
+git stash pop --> Änderungen aus zwischen Speicher zurück hohlen.
 
+git revert <commit-hash-nr>  --> Commit mit <commit-hash-nr> wird rückgängig gemacht
 
+git fetch origin master  --> der Remote-Track-Branch wir aus dem Repository(origin) Branch(master) lokal aktualisiert
 
+git reset --soft HEAD~1  --> der History wird auf den letzten Commit (HEAD minus 1) zurückgesetzt und die Änderungen die darin enthalten waren erscheinen im Stage-Bereich
 
 
 
