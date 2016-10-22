@@ -47,7 +47,9 @@ git .gitignore  --> Datei .gitignor im Root Verzeichnis anlegen. In die Datei di
 
 git rm <Dateiname> --> Mit dem rm Befehl müssen in git die gelöschten Dateien bekannt gemacht werden.
 
-git push -u origin master  --> Änderungen vom lokalen Repository(master) ins remote Repository(origin) aufnehmen.
+git push --set-upstream origin branchnett --> Upstream-Pfad für lokalen Branch definieren und Änderungen vom lokalen Repository(master) ins remote Repository(origin) aufnehmen.
+
+git push -u origin master  --> Upstream-Pfad für lokalen Branch definieren und Änderungen vom lokalen Repository(master) ins remote Repository(origin) aufnehmen.
 
 git pull  --> Änderungen vom remote Repository auf das lokale Repository herunter ziehen.
 
