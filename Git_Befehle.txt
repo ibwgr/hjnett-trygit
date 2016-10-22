@@ -1,4 +1,29 @@
+Allgemeine Linux-Konsolenbefehle:
+
+mkdir verzeichnisname  ->Verzeichnis erstellen
+touch datei.txt        ->Datei anlegen
+vi datei.txt           ->Datei edieren
+i                      ->Text kann eingegeben werden
+Esc -> :wq -> Enter    ->Editor speichern und verlassen
+Ecc -> :q! -> Enter    ->Editor verlassen ohne speichern
+:q   (Quit)
+
+Konfiguration:
+
+Externes Diff- und Mergetool einbinden (P4Mergetool):
+git config --global merge.tool p4merge
+git config --global mergetool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+git config --global diff.tool p4merge
+git config --global difftool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+
+~/.gitconfig -> Konfiguration prüfen
+cat .git/config -> Konfiguration des Repos
+
+Bearbeitung:
+
 git init   -->wird im aktuellen Verzeichniss ein neues Repository angelegt
+
+git remote add origin https://github.com/ibwgr/hjnett-trygit.git -> Verbindung zu github mit Name origin auf https://github.com/ibwgr/hjnett-trygit.git hinzufügen
 
 git add <Dateiname>  -->wird eine Datei in den Commit aufgenomen ( erst in git Stange)
 
@@ -20,7 +45,7 @@ git .gitignore  --> Datei .gitignor im Root Verzeichnis anlegen. In die Datei di
 
 git rm <Dateiname> --> Mit dem rm Befehl müssen in git die gelöschten Dateien bekannt gemacht werden.
 
-git push -u origin master  --> Änderungen vom lokalen Repository ins remote Repository aufnehmen.
+git push -u origin master  --> Änderungen vom lokalen Repository(master) ins remote Repository(origin) aufnehmen.
 
 git pull  --> Änderungen vom remote Repository auf das lokale Repository herunter ziehen.
 
@@ -33,6 +58,8 @@ git reset HAED . --> alle Dateien im Stage Bereich werden zurück genommen.
 git diff <hashNr erste 7 zeichen> <hashNr erste 7 zeichen> --> Vergleicht die zwei Dateien auf unterschiede.
 
 git diff --staged -->  Zeigt Unterschiede zwischen staging Area und letztem Commit (HEAD)
+
+git diff HEAD~2 HEAD -- main.c  --> Differenz des Files main.c von Commit-Minus 2 zu aktuellem Commit(HEAD) 
 
 git branch <Branch Name>  --> Neuen Branch anlegen.
 
