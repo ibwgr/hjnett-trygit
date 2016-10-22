@@ -7,6 +7,7 @@ i                      ->Text kann eingegeben werden
 Esc -> :wq -> Enter    ->Editor speichern und verlassen
 Ecc -> :q! -> Enter    ->Editor verlassen ohne speichern
 :q   (Quit)
+$HOME                  ->Home-Verzeichnis wird ausgegeben
 
 Konfiguration:
 
@@ -17,7 +18,8 @@ git config --global diff.tool p4merge
 git config --global difftool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
 
 ~/.gitconfig -> Konfiguration prüfen
-cat .git/config -> Konfiguration des Repos
+cat .git/config      -> Konfiguration des Repos
+git config --list
 
 Bearbeitung:
 
@@ -48,8 +50,6 @@ git rm <Dateiname> --> Mit dem rm Befehl müssen in git die gelöschten Dateien be
 git push -u origin master  --> Änderungen vom lokalen Repository(master) ins remote Repository(origin) aufnehmen.
 
 git pull  --> Änderungen vom remote Repository auf das lokale Repository herunter ziehen.
-
-cat .git/config  --> Konfiguration von Git anzeigen.
 
 git reset <Dateiname>  --> Unstage Dateien, die noch nicht commitet sind.
 
@@ -88,6 +88,8 @@ git stash pop --> Änderungen aus zwischen Speicher zurück hohlen.
 git revert <commit-hash-nr>  --> Commit mit <commit-hash-nr> wird rückgängig gemacht
 
 git fetch origin master  --> der Remote-Track-Branch wir aus dem Repository(origin) Branch(master) lokal aktualisiert
+
+git reset ibw.txt  --> Gegenteil(unstage) von git add ibw.txt
 
 git reset --soft HEAD~1  --> der History wird auf den letzten Commit (HEAD minus 1) zurückgesetzt und die Änderungen die darin enthalten waren erscheinen im Stage-Bereich
 
